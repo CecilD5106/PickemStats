@@ -32,7 +32,7 @@ namespace PickemStats
                         wsWeekPick.Cells[i, 15].Value = wsTeamStat.Cells[5, 12].Value;
                         wsWeekPick.Cells[i, 17].Value = wsTeamStat.Cells[5, 14].Value;
                         wsWeekPick.Cells[i, 19].Value = wsTeamStat.Cells[5, 16].Value;
-
+                        //Find the last in the games stats section
                         int j = 12;
                         while (wsTeamStat.Cells[j, 9].Value != null)
                         {
@@ -42,9 +42,9 @@ namespace PickemStats
 
                         int iWin3 = 0;
                         int iWin5 = 0;
+                        int l = 0;
                         for (var k = 0; k < 5; k++ )
                         {
-                            int l = 0;
                             if (j > 11)
                             {
                                 if (l < 3)
